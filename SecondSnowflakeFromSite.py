@@ -1,0 +1,48 @@
+from turtle import *
+speed(0)
+screen = Screen()
+screen.bgcolor('black')
+pencolor('red')
+def quater(size=100):
+  global n
+  n = size
+  fd(size)
+  lt(90)
+  fd(size // 3)
+  rt(120)
+  fd(size // 9)
+  lt(60)
+  fd(size // 3)
+  lt(60)
+  fd(size * 2 // 3)
+  lt(60)
+  fd(size * 2 // 3)
+  lt(60)
+  fd(size // 3)
+  lt(70)
+  fd(size // 3)
+  rt(90)
+  fd(size // 7)
+  up()
+  goto(0, 0)
+  down()
+  lt(180)
+def quaters(number=6):
+  for i in range(number):
+    lt(50)
+    quater()
+quaters()
+rt(90)
+fd(n // 2)
+lt(90)
+circle(n // 2)
+lt(90)
+fd(n // 2)
+lt(80)
+fd(n)
+
+rt(120)
+fd(n)
+for i in range(5):
+  rt(60)
+  fd(n)
